@@ -6,7 +6,7 @@ def display_menu():
     print("4. Exit")
 
 def main():
-    shopping_list = ["abel","aberham","daniel"]
+    shopping_list = []
     while True:
         display_menu()
         choice = input("Enter your choice: ")
