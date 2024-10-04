@@ -1,13 +1,15 @@
-def perform_operation(num1,num2,operation):
-  if operation == 'add':
-    result = num1 + num2
-  elif operation == 'subtract':
-    result = num1 - num2
-  elif operation == 'multiply':
-   result = num1 * num2
-  elif operation == 'divide':
-    if num2 > 0:
-        result = num1/num2
-    else:
-        result = "Cannot divide by zero"
+def perform_operation(num1, num2, operation):
+  result = ""
+  match operation:
+    case 'add':
+      result = num1 + num2
+    case 'subtract':
+      result = num1 - num2
+    case 'multiply':
+      result = num1 * num2
+    case 'divide':
+      if num2 == 0:
+        result = "division by zero is undefined"
+      elif num2 != 0:
+        result = num1 / num2
   return result
