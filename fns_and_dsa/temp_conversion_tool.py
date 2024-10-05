@@ -19,5 +19,5 @@ if temperature.isdigit():
           fahrenheit = convert_to_fahrenheit(int(temperature))
           print(f"{temperature}°C is {fahrenheit:.2f}°F")
 else:
-  print("Invalid temperature. Please enter a valid numeric value.")
+  print("Invalid temperature. Please enter a numeric value.")
       
