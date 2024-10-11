@@ -12,8 +12,3 @@ class Book:
   
   def __repr__(self):
     return f"Book('{self.title}', '{self.author}', {self.year})"
-
-my_book = Book("1984", "George Orwell", 1949)
-
-    # Demonstrating the __str__ method
-print(repr(my_book)) 
