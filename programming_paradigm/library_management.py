@@ -14,9 +14,7 @@ class Book:
 
 class Library:
   def __init__(self):
-    if books == None:
-      books = []
-    self.__books =books
+    self.__books = []
   
   def add_book(self,book):
     self.__books.append(book)
