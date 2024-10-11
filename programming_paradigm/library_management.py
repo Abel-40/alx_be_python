@@ -13,7 +13,7 @@ class Book:
     self.__is_checked_out = False
 
 class Library:
-  def __init__(self,books = None):
+  def __init__(self):
     if books == None:
       books = []
     self.books =books
